@@ -17,10 +17,13 @@
 
         <div class="language-container">
             <div class="language-selector">
+                
                 <input class="search-container" type="text" placeholder="Change Language" readonly>
+                
                 <span class="search-icon">
                     <img src="image/language.png" alt="Language" width="20">
                 </span>
+                
                 <ul class="language-dropdown">
                     <li data-lang="en">English</li>
                     <li data-lang="hi">हिन्दी</li>
@@ -28,16 +31,17 @@
                     <li data-lang="gu">ગુજરાતી</li>
                 </ul>
             </div>
+            
         </div>
 
-        <div class="screen-reader-controls">
+        <div class="screen-reader-controls" >
             <button onclick="readWebsiteText()">🔊 Read</button>
             <button onclick="pauseSpeech()">⏸️ Pause</button>
             <button onclick="resumeSpeech()">▶️ Resume</button>
             <button onclick="stopSpeech()">⏹️ Stop</button>
         </div>
 
-
+        <div class="hero-section">
         <div class="navigation-container">
 
             <div class="webname">
@@ -46,16 +50,19 @@
             </div>
 
             <div class="groupone">
-                <p>Resource library</p>
-                <p>Government Subsidies</p>
+                <p > <a href="res.html"> Resource library</a></p>
+                <p> <a href="https://www.standupmitra.in/Home/SubsidySchemesForAll">Government Subsidies</a></p>
             </div>
            
+            <div class="login-signup">
+                <a href="https://kisan-login.vercel.app"><p>LOGIN/SIGN-UP</p></a>
+            </div>
 
-            <div class="button-group">
+            <!-- <div class="button-group">
                 
                 <button id="login-btn"> Login</button>
                 <button id="signup-btn">Sign Up</button>
-            </div>
+            </div> -->
         </div>
 
 
@@ -70,9 +77,9 @@
                         <span class="green">Empowering Farmers </span>with AI-Driven Insights – Smart Solutions for a Sustainable Future</p>
                         
                         <div class="ml-buttons">
-                            <button><a href=>Pest Detection</a></button>
-                            <button><a href="crop_recommendation/templates/index.html">Crop Recommendations</a></button>
-                            <button><a href=>Fertilizer Recommendation</a></button>
+                            <button><a href="https://diseasedetection-edka8ibu3jlikr7pcjppwn.streamlit.app/">Pest Detection</a></button>
+                            <button><a href="https://crop-recommendation-ochre.vercel.app/">Personalised Dashboard</a></button>
+                            <button><a href="https://fertilizerml.onrender.com/">Fertilizer Recommendation</a></button>
                             <!-- <a href="crop_recommendation/templates/index.html" class="btn">Crop Recommendations</a> -->
                             <!-- <button><a href="Dashboard.html">Dashboard</a></button> -->
                         </div>
@@ -80,7 +87,7 @@
                     </div>
             
         </div>
-
+        </div>
         <div class="features-section" id="readable">
             <h2 class="heading">WHAT WE OFFER</h1>
             <p class="heading-desc">Being a part of KisanMitra, this is what you get from from us:</p>
@@ -176,7 +183,6 @@
                     </form>
                 </div>
 
-                <!-- Signup Form -->
                 <div class="form signup_form">
                     <form action="#" id="signup-form">
                         <h2 class="title">Signup</h2>
@@ -280,7 +286,7 @@
                 <h2>Ready to Transform Your Farming Journey?</h2>
                 <p>Join thousands of farmers leveraging AI to boost productivity and sustainability</p>
                 <div class="cta-buttons">
-                    <button class="primary-btn">Start Free Trial</button>
+                    <button class="primary-btn">Start Now</button>
                     <button class="secondary-btn">Learn More</button>
                 </div>
             </div>
@@ -299,7 +305,7 @@
                         <h4>Quick Links</h4>
                         <ul>
                             <li>Home</li>
-                            <li>Dashboard</li>
+                            <!-- <li>Dashboard</li> -->
                             <li>Community Forum</li>
                             <li>Resource Library</li>
                         </ul>
@@ -343,6 +349,16 @@
     <script src="./index.js"></script>
     <script src="./screenReader.js"></script>
     <script src="./speech-recognition.js"></script>
+    <!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="script.js"></script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+          {pageLanguage: 'en'},
+          'google_translate_element'
+      );
+  } 
+</script> -->
 </body>
 </html>
 <script>

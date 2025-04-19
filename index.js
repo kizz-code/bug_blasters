@@ -514,7 +514,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 aiAssistantContainer.id = 'ai-assistant-container';
                 aiAssistantContainer.innerHTML = `
                     <div id="ai-assistant-icon">
-                        <img src="ai-assistant-icon.png" alt="AI Assistant">
+                        <img src="image/ai-assistant-icon.png" alt="AI Assistant">
                     </div>
                     <div id="ai-assistant-dialog" class="hidden">
                         <div id="ai-assistant-header">
