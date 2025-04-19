@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KisanMitra</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <style>
+    </style>
+
+</head>
+<body>
+ 
+    <div class="wrapper">
+
+        <div class="language-container">
+            <div class="language-selector">
+                <input class="search-container" type="text" placeholder="Change Language" readonly>
+                <span class="search-icon">
+                    <img src="image/language.png" alt="Language" width="20">
+                </span>
+                <ul class="language-dropdown">
+                    <li data-lang="en">English</li>
+                    <li data-lang="hi">हिन्दी</li>
+                    <li data-lang="mr">मराठी</li>
+                    <li data-lang="gu">ગુજરાતી</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="screen-reader-controls">
+            <button onclick="readWebsiteText()">🔊 Read</button>
+            <button onclick="pauseSpeech()">⏸️ Pause</button>
+            <button onclick="resumeSpeech()">▶️ Resume</button>
+            <button onclick="stopSpeech()">⏹️ Stop</button>
+        </div>
+
+
+        <div class="navigation-container">
+
+            <div class="webname">
+                <img src="image/farmer.png" alt="" width="50">
+                <p class="KisanMitra">KisanMitra</p>
+            </div>
+
+            <div class="groupone">
+                <p>Resource library</p>
+                <p>Government Subsidies</p>
+            </div>
+           
+
+            <div class="button-group">
+                
+                <button id="login-btn"> Login</button>
+                <button id="signup-btn">Sign Up</button>
+            </div>
+        </div>
+
+
+        <div class="namaste" id="readable">
+            <div class="card">
+                <div class="textdesc">
+                
+                    <p class="text1">Namaste,welcome to KisanMitra</p>
+                    
+
+                    <p class="text2">
+                        <span class="green">Empowering Farmers </span>with AI-Driven Insights – Smart Solutions for a Sustainable Future</p>
+                        
+                        <div class="ml-buttons">
+                            <button><a href=>Pest Detection</a></button>
+                            <button><a href="crop_recommendation/templates/index.html">Crop Recommendations</a></button>
+                            <button><a href=>Fertilizer Recommendation</a></button>
+                            <!-- <a href="crop_recommendation/templates/index.html" class="btn">Crop Recommendations</a> -->
+                            <!-- <button><a href="Dashboard.html">Dashboard</a></button> -->
+                        </div>
+                    </div>
+                    </div>
+            
+        </div>
+
+        <div class="features-section" id="readable">
+            <h2 class="heading">WHAT WE OFFER</h1>
+            <p class="heading-desc">Being a part of KisanMitra, this is what you get from from us:</p>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="cont">
+                        <img src="image/assistive-technology.png" alt="">
+                    <p class="main">Voice-based Assistance</p>
+                    <p class="main-desc">Get expert farming advice through easy voice commands.</p>
+                    </div>
+
+                    
+                </div>
+                    <div class="feature">
+                        <div class="cont">
+                        <img src="image/pest-control (2).png" alt="">
+                        <p class="main">Pest Management</p>
+                        <p class="main-desc">Detect and prevent crop diseases with AI-powered analysis.</p>
+                    </div>
+                </div>
+                
+
+                <div class="feature">
+                    <div class="cont">
+                    <img src="image/iot (1).png" alt="">
+                    <p class="main">IOT Sensor</p>
+                    <p class="main-desc">Monitor soil, weather, and crop health in real time.</p>
+                </div>
+            </div>
+
+                <div class="feature">
+                    <div class="cont">
+                    <img src="image/market (1).png" alt="">
+                    <p class="main">Market & schemes</p>
+                    <p class="main-desc">Stay updated on government schemes and find the best market rates.</p>
+                </div>
+            </div>
+                <div class="feature">
+                    <div class="cont">
+                    <img src="image/social-justice (1).png" alt="">
+                    <p class="main">Community Forum</p>
+                    <p class="main-desc">Connect with fellow farmers to share knowledge and experiences.</p>
+                </div>
+            </div>
+
+                <div class="feature">
+                    <div class="cont">
+                    <img src="image/online-course (1).png" alt="">
+                    <p class="main">Resource Library</p>
+                    <p class="main-desc">Explore a vast collection of guides, tutorials, and best practices.</p>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+
+        <section class="home" id="login-signup-modal">
+            <div class="form_container">
+                <i class="uil uil-times form_close"></i>
+                
+                <!-- Login Form -->
+                <div class="form login_form">
+                    <form action="#" id="login-form">
+                        <h2 class="title">Login</h2>
+
+                        <div class="input_box">
+                            <input type="email" placeholder="Enter your email" required>
+                            <i class="uil uil-envelope-alt"></i>
+                        </div>
+
+                        <div class="input_box">
+                            <input type="password" placeholder="Enter your password" required>
+                            <i class="uil uil-lock"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+
+                        <div class="option_field">
+                            <span class="checkbox">
+                                <input type="checkbox" id="check">
+                                <label for="check">Remember me</label>
+                            </span>
+                            <a href="#" class="forgot_pw">Forgot password?</a>
+                        </div>
+
+                        <button type="submit" class="button">Login Now</button>
+
+                        <div class="login_signup">
+                            Don't have an Account?
+                            <a href="#" id="signup-link">Signup</a>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Signup Form -->
+                <div class="form signup_form">
+                    <form action="#" id="signup-form">
+                        <h2 class="title">Signup</h2>
+
+                        <div class="input_box">
+                            <input type="text" placeholder="Enter your name" required>
+                            <i class="uil uil-user"></i>
+                        </div>
+
+                        <div class="input_box">
+                            <input type="email" placeholder="Enter your email" required>
+                            <i class="uil uil-envelope-alt"></i>
+                        </div>
+
+                        <div class="input_box">
+                            <input type="password" placeholder="Create your password" required>
+                            <i class="uil uil-lock"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+
+                        <div class="input_box">
+                            <input type="password" placeholder="Confirm your password" required>
+                            <i class="uil uil-lock"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+
+                        <button type="submit" class="button">Signup Now</button>
+
+                        <div class="login_signup">
+                            Already have an Account?
+                            <a href="#" id="login-link">Login</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="testimonials" id="readable">
+            <h2>What Farmers Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <p>"KisanMitra has transformed my farming approach with its AI-driven insights."</p>
+                    <div class="farmer-info">
+                        <img src="image/farmer-avatar1.jpg" alt="Farmer">
+                        <span>Rajesh Kumar, Maharashtra</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"The voice assistant helps me get information instantly, even with limited literacy."</p>
+                    <div class="farmer-info">
+                        <img src="image/farmer-avatar2.jpg" alt="Farmer">
+                        <span>Priya Singh, Uttar Pradesh</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"Market rates and government scheme information is a game-changer for me."</p>
+                    <div class="farmer-info">
+                        <img src="image/farmer-avatar3.jpg" alt="Farmer">
+                        <span>Amar Patel, Gujarat</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
+</div>
+
+        
+        <section class="how-it-works" id="readable">
+            <h2>How KisanMitra Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Register</h3>
+                    <p>Create your free account and customize your farm profile</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Connect</h3>
+                    <p>Link your farm details and preferred languages</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Explore</h3>
+                    <p>Access AI-powered insights, voice assistance, and community resources</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Grow</h3>
+                    <p>Implement recommendations and track your farm's progress</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="cta-section" id="readable">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Farming Journey?</h2>
+                <p>Join thousands of farmers leveraging AI to boost productivity and sustainability</p>
+                <div class="cta-buttons">
+                    <button class="primary-btn">Start Free Trial</button>
+                    <button class="secondary-btn">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        
+        <footer class="site-footer" id="footer">
+            
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="image/farmer.png" alt="KisanMitra Logo" width="50">
+                    <h3>KisanMitra</h3>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li>Home</li>
+                            <li>Dashboard</li>
+                            <li>Community Forum</li>
+                            <li>Resource Library</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li>Voice Assistance</li>
+                            <li>Pest Management</li>
+                            <li>Market Rates</li>
+                            <li>IoT Sensors</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li>Contact Us</li>
+                            <li>FAQ</li>
+                            <li>Privacy Policy</li>
+                            <li>Terms of Service</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><img src="image/facebook.png" alt="Facebook" width="20"></a>
+                        <a href="#" class="social-icon"><img src="image/twitter.png" alt="Twitter" width="20"></a>
+                        <a href="#" class="social-icon"><img src="image/instagram.png" alt="Instagram" width="20"></a>
+                        <a href="#" class="social-icon"><img src="image/youtube.png" alt="YouTube" width="20"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 KisanMitra. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+    
+</div>
+    <script src="./index.js"></script>
+    <script src="./screenReader.js"></script>
+    <script src="./speech-recognition.js"></script>
+</body>
+</html>
+<script>
+    document.querySelectorAll('.language-dropdown li').forEach(item => {
+    item.addEventListener('click', function () {
+        const selectedLang = this.getAttribute('data-lang');
+
+        
+        document.documentElement.lang = selectedLang;
+
+        
+        document.querySelector('.search-container').value = this.innerText;
+
+        console.log("Language changed to", selectedLang);
+    });
+});
+</script>
