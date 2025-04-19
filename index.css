@@ -22,7 +22,10 @@ body {
     align-items: center;
     z-index: 1000; /* Ensures it stays above other elements */
 }
-
+#loginText{
+    text-decoration: none;
+    color: #1B5E20;
+}
 .navigation-container {
     position: fixed; /* Keeps it fixed at the top */
     top: 35px; /* Adjust this to position it below the .language-container */
